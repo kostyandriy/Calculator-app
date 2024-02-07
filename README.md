@@ -5,7 +5,7 @@
     <h1>Руководство SmartCalc v1.0.</h1>
     <h2>Содержание</h2>
     <ol>
-        <li><a name="1" href="#">Установка</a></li>
+        <li><a name="1" href="#1-1">Установка</a></li>
         <li><a name="2" href="#2-2">Запуск калькулятора</a></li>
         <li><a name="3" href="#3-3">Создание архива</a></li>
         <li><a name="4" href="#4-4">Описание SmartCalc_v1.0</a>
