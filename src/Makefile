@@ -66,23 +66,11 @@ clean_tests:
 	rm -rf *.gcno *.gcda s21_smart_calc_tests report *.info *gcov *txt
 
 do_style:
-	cp ../materials/linters/.clang-format Tests/
-	cp ../materials/linters/.clang-format C_source/ 
-	cp ../materials/linters/.clang-format Qt/ 
-	clang-format -i C_source/*c C_source/*h
-	clang-format -i Qt/*cpp Qt/*h
-	clang-format -i Tests/*c
-	rm -rf C_source/.clang-format
-	rm -rf Qt/.clang-format
-	rm -rf Tests/.clang-format
+	clang-format -style=Google -i C_source/*c C_source/*h
+	clang-format -style=Google -i Qt/*cpp Qt/*h
+	clang-format -style=Google -i Tests/*c
 
 check_style:
-	cp ../materials/linters/.clang-format Tests/
-	cp ../materials/linters/.clang-format C_source/ 
-	cp ../materials/linters/.clang-format Qt/ 
-	clang-format -n C_source/*c C_source/*h
-	clang-format -n Qt/*cpp Qt/*h
-	clang-format -n Tests/*c
-	rm -rf C_source/.clang-format
-	rm -rf Qt/.clang-format
-	rm -rf Tests/.clang-format
+	clang-format -style=Google -n C_source/*c C_source/*h
+	clang-format -style=Google -n Qt/*cpp Qt/*h
+	clang-format -style=Google -n Tests/*c
