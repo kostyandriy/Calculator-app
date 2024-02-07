@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>SmartCalc v1.0</title>
-    <style>
-        .description ol {
-            list-style: none;
-            counter-reset: li;
-        }
-
-        .description li:before {
-            counter-increment: li;
-            content: counters(li, ".") ". ";
-        }
-
-        a {
-            color: blue;
-            text-decoration-line: none;
-        }
-
-        a:hover {
-            color: rgb(80, 97, 250);
-            text-decoration-line: underline;
-        }
-    </style>
-</head>
-
 <body>
     <h1>Руководство SmartCalc v1.0.</h1>
     <h2>Содержание</h2>
